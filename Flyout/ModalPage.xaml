@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Modal Page"
+             x:Class="Flyout.ModalPage">
+    <ContentPage.Content>
+        <StackLayout Margin="0,0,0,20">
+            <CarouselView ItemsSource="{Binding ImageUrls}">
+    <CarouselView.ItemTemplate>
+        <DataTemplate>
+            <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                <StackLayout>
+                    <Image Source="{Binding ImageUrl}" Aspect="AspectFill" HeightRequest="660" WidthRequest="300" />
+                    <Label Text="{Binding Name}" FontSize="16" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Label Text="{Binding Age}" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+        </DataTemplate>
+    </CarouselView.ItemTemplate>
+</CarouselView>
+
+            <Button Text="Close Modal" 
+                    Clicked="CloseModal_Clicked"
+                    FontSize="16"
+                    WidthRequest="350"
+                    HeightRequest="40"
+                    CornerRadius="20"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

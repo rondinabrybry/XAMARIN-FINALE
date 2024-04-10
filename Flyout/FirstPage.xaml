@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Home"
+             x:Class="Flyout.FirstPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Button 
+                Text="Show Modal Carousel" 
+                Clicked="Button_Clicked" 
+                FontSize="16"
+                WidthRequest="350"
+                HeightRequest="40"
+                CornerRadius="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Grid.Row="0"
+                Margin="0,20,0,0" />
+
+            <StackLayout 
+                Grid.Row="1"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand">
+
+                <Label Text="AP4" FontSize="40" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                <Label Text="IOS Mobile Application Development Cross-Platfrom" FontSize="40" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                <Label Text="Glenard Sarmiento" FontSize="20" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

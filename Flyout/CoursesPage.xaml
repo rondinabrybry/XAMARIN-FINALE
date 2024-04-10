@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Hornido, Mark Angelo"
+             x:Class="Flyout.CoursesPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand"
+                 Padding="20"
+                 Spacing="20"
+                 BackgroundColor="#f0f0f0">
+            <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center">
+                <Image Source="Mark.jpg"
+                   HeightRequest="150"
+                   WidthRequest="150"
+                   Aspect="AspectFill"
+                   VerticalOptions="Center" />
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="Hornido, Mark Angelo B."
+                       FontSize="40"
+                       FontAttributes="Bold"
+                       TextColor="#333333" />
+                    <BoxView Color="Black" HeightRequest="1" />
+                </StackLayout>
+            </StackLayout>
+
+            <Label Text="Address: 123 Street, City"
+               FontSize="18"
+               TextColor="#666666" />
+            <Label Text="Birth Date: January 1, 1990"
+               FontSize="18"
+               TextColor="#666666" />
+            <Button Text="Edit Profile"
+                BackgroundColor="#007bff" 
+                TextColor="White"
+                FontSize="16"
+                WidthRequest="150"
+                HeightRequest="40"
+                CornerRadius="20"
+                HorizontalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
